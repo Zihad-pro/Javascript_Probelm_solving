@@ -1,20 +1,23 @@
 // Problem 1: Reverse a String
 
 function reverseString(str) {
-  // step - 1 split() method
-
   let splitString = str.split("");
-  // console.log(splitString);
-
-  //use reverse() method
-
   let reverseArray = splitString.reverse();
-  // console.log(reverseArray);
-  // use join () method
   let joinArray = reverseArray.join("");
-  console.log(joinArray);
-
   return joinArray;
 }
 
 reverseString("hello");
+
+
+
+/* ব্যাখ্যা : 
+
+ধাপ -১ ঃ split হলো কোন একটা কিছু দিয়ে আলাদা ছোট ছোট অংশে ভাগ করার কাজ । 
+ধাপ -২ ঃ reverse করা মানে উল্টো দেওয়া । 
+ধাপ -৩ঃ join  মানে জোড়া লাগানো । উদাহারণ ঃ
+const friend= ["rhidoy, shefat , shohan , shehab"];
+console.log(friend.join("|"))
+output - rhidoy |shefat | shohan|shehab 
+
+*/
